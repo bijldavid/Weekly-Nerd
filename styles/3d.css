@@ -3,8 +3,8 @@
 /* ============================================================================== */
 
 .threeD {
-    --x: 10em;
-    --y: 10em;
+    --x: 15em;
+    --y: .7em;
     --z: 10em;
 
 
@@ -25,10 +25,13 @@
 
 .threeD div {
     position: absolute;
+    background-color: rgb(249, 247, 242);
 }
 
 .threeD-model {
     animation: spin 10s linear infinite;
+    translate: 0 5em;
+    transform: rotateY(90deg) rotateX(-10deg);
 }
 
 @keyframes spin {
@@ -82,61 +85,122 @@
 
 
 /* ============================================================================== */
-/* MAIN */
+/* BOTTOM */
 /* ============================================================================== */
 
 /* front */
-.threeD-model div:nth-of-type(1) {
+.threeD-model .bottom>div:nth-of-type(1) {
     width: var(--x);
     height: var(--y);
-    background-color: rgba(0, 0, 255, 0.496);
     translate: calc(var(--x) / -2) calc(var(--y) / -2) calc(var(--z) / 2);
 }
 
 /* back */
-.threeD-model div:nth-of-type(2) {
+.threeD-model .bottom>div:nth-of-type(2) {
     width: var(--x);
     height: var(--y);
-    background-color: rgba(255, 0, 0, 0.496);
     translate: calc(var(--x) / -2) calc(var(--y) / -2) calc(var(--z) / -2);
 }
 
 /* top */
-.threeD-model div:nth-of-type(3) {
+.threeD-model .bottom>div:nth-of-type(3) {
     width: var(--x);
-    height: var(--y);
-    background-color: rgba(30, 255, 0, 0.496);
+    height: var(--z);
     transform-origin: top;
     rotate: x 90deg;
     translate: calc(var(--x) / -2) calc(var(--y) / -2) calc(var(--z) / -2);
 }
 
 /* bottom */
-.threeD-model div:nth-of-type(4) {
+.threeD-model .bottom>div:nth-of-type(4) {
     width: var(--x);
-    height: var(--y);
-    background-color: rgba(30, 255, 0, 0.496);
+    height: var(--z);
     transform-origin: top;
     rotate: x 90deg;
     translate: calc(var(--x) / -2) calc(var(--y) / 2) calc(var(--z) / -2);
 }
 
 /* left */
-.threeD-model div:nth-of-type(5) {
-    width: var(--x);
+.threeD-model .bottom>div:nth-of-type(5) {
+    width: var(--z);
     height: var(--y);
-    background-color: rgba(30, 255, 0, 0.496);
     transform-origin: left;
     rotate: y 90deg;
     translate: calc(var(--x) / -2) calc(var(--y) / -2) calc(var(--z) / 2);
 }
 
 /* right */
-.threeD-model div:nth-of-type(6) {
-    width: var(--x);
+.threeD-model .bottom>div:nth-of-type(6) {
+    width: var(--z);
     height: var(--y);
-    background-color: rgba(30, 255, 0, 0.496);
     transform-origin: left;
     rotate: y 90deg;
     translate: calc(var(--x) / 2) calc(var(--y) / -2) calc(var(--z) / 2);
+}
+
+/* ============================================================================== */
+/* TOP */
+/* ============================================================================== */
+
+.threeD-model .top {
+    height: 100%;
+    width: 100%;
+    transform-origin: top;
+    transition: all 1s ease;
+    translate: 0 0 calc(var(--y) / 2);
+}
+
+.threeD-model:hover .top {
+    rotate: x 110deg;
+    translate: 0 calc(var(--y) / -2) -3px; /* <- MAGIC NUMBER */
+}
+
+/* front */
+.threeD-model .top>div:nth-of-type(1) {
+    width: var(--x);
+    height: var(--y);
+    translate: 0 var(--z) calc(var(--y) * -.5);
+    transform-origin: top;
+    rotate: x 90deg;
+}
+
+/* back */
+.threeD-model .top>div:nth-of-type(2) {
+    width: var(--x);
+    height: var(--y);
+    translate: 0 0 calc(var(--y) * -.5);
+    transform-origin: top;
+    rotate: x 90deg;
+}
+
+/* top */
+.threeD-model .top>div:nth-of-type(3) {
+    width: var(--x);
+    height: var(--z);
+    translate: 0 0 calc(var(--y) / 2);
+}
+
+/* bottom */
+.threeD-model .top>div:nth-of-type(4) {
+    width: var(--x);
+    height: var(--z);
+    translate: 0 0 calc(var(--y) / -2);
+}
+
+/* left */
+.threeD-model .top>div:nth-of-type(5) {
+    width: var(--y);
+    height: var(--z);
+    transform-origin: left;
+    rotate: y 90deg;
+    translate: 0 0 calc(var(--y) / 2);
+}
+
+/* right */
+.threeD-model .top>div:nth-of-type(6) {
+    width: var(--y);
+    height: var(--z);
+    transform-origin: left;
+    rotate: y 90deg;
+    translate: var(--x) 0 calc(var(--y) / 2);
 }
