@@ -92,7 +92,41 @@ Minder krachtige oplossingen zijn meestal beter leesbaar voor screenreaders
 
 ---
 
-❌ Absent met reden
+## <mark><samp>--- Betalen voor het web ~ **<sub><sup>Peter-Paul Koch</sup></sub>** ---</samp></mark>
+
+**Probleem**  
+Sites zijn ‘gratis’ omdat advertenties betalen  
+→ Gevolg: tracking, datalekken, ads, slechte UX  
+→ Iedereen klaagt over privacy, niemand over geld geven aan sites
+
+<br>
+
+**Zijn idee**  
+Geef zelf geld aan sites die je goed vindt  
+→ Denk aan 5-20 cent per dag per site  
+→ Kleine betalingen = digitale dankbaarheid  
+→ Betere content, gezondere webcultuur
+
+<br>
+
+**Waarom ads slecht zijn**  
+→ Aandacht = geld → makers gaan voor kliks, niet voor kwaliteit  
+→ Design & UX worden ondergeschikt aan winst
+
+<br>
+
+**Web Monetization = alternatief**  
+- Browser ziet een `monetization` tag  
+- Betaling start automatisch via wallet  
+- Zolang je actief bent, krijgt de site geld
+
+<br>
+
+**Samenvatting**  
+→ Nu bepaalt site hoeveel iets kost  
+→ Alternatief: jij bepaalt wat content waard is  
+
+>"Betaal voor wat je leest, anders lees je alleen wat de rijken willen dat je leest."
 
 <br>
 <br>
@@ -381,6 +415,30 @@ CSS features die ze gebruikt:
 
 ## <mark><samp>--- Circuit Bending ~ **<sub><sup>Rosa</sup></sub>** ---</mark></samp>
 <br>
+
+**Over Rosa**  
+→ Technische maker & hacker, ex-CMD  
+→ Doet veel met e-waste, livesets, workshops en hacklabs  
+→ Alles wat ze bedenkt, wilt ze zelf maken
+
+<br>
+
+**Hacker-mindset**  
+→ Zelf CMS bouwen, eigen servers draaien, los van grote platforms  
+→ Platform-agnostisch = geen voorkeur voor merken of systemen
+
+<br>
+
+**DIY mentaliteit**  
+→ Zelf doen, zelf slopen, zelf leren  
+→ Onafhankelijk kunnen bouwen, denken & maken
+
+<br>
+
+**Tools die ze gebruikt**  
+- **ImageMagick** → photoshop via de terminal  
+- **Bash** → automatiseren & bewerken via command-line  
+- **Audio hacking** → met kabels/mixers gek geluid maken (bewust rauw)
 
 <br>
 <br>
