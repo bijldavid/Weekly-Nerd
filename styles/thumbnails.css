@@ -1,0 +1,12 @@
+.projects-container section ul li {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: var(--beige-3);
+}
+
+.projects-container section ul li:hover {
+    outline: 2px solid var(--orange);
+}
