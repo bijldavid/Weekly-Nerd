@@ -677,11 +677,11 @@ Nienke onderzocht de toegankelijkheid van de GVB-app als afstudeerproject bij CM
 ## Doelen
 
 ---
-## <mark><samp>**<sup><sub>Doel 1</sup></sub>** | Complexere javascript schrijven</samp></mark>
+## <mark><samp>**<sup><sub>Doel 1</sup></sub>** | Beter worden in javascript schrijven</samp></mark>
 
 Ik wil graag beter worden in JavaScript. Ik denk dat ik de basis redelijk goed begrijp, maar ik vind het nog lastig om wat complexere dingen zelf te bouwen. Het lijkt me een handige skill om onder de knie te krijgen.
 
-## <mark><samp>**<sup><sub>Doel 2</sup></sub>** | Minder snel AI gebruiken tijdens projecten</samp></mark>
+## <mark><samp>**<sup><sub>Doel 2</sup></sub>** | Minder snel AI code te laten generenen</samp></mark>
 
 Dit doel hangt best goed samen met mijn eerste doel. Ik ben vaak te veel gefocust op het eindresultaat, en dan gebruik ik AI om dingen op te lossen die ik eigenlijk zelf zou moeten leren. Daardoor leer ik het uiteindelijk niet echt goed.
 
