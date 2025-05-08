@@ -384,6 +384,7 @@
 
 .about-me-container section .text-container p {
     font-size: 1.5cqw;
+    line-height: 2.2cqw;
     font-weight: var(--medium);
     font-family: "articulat-cf", sans-serif;
     font-style: normal;

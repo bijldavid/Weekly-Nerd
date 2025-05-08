@@ -7,6 +7,8 @@
     --y: .7em;
     --z: 10em;
 
+    --animation-duration: 10s;
+
 
     width: 100%;
     height: 100%;
@@ -29,7 +31,7 @@
 }
 
 .threeD-model {
-    animation: spin 10s linear infinite;
+    animation: spin var(--animation-duration) linear infinite;
     translate: 0 5em;
     transform: rotateY(90deg) rotateX(-10deg);
 }
