@@ -685,6 +685,6 @@ Ik wil graag beter worden in JavaScript. Ik denk dat ik de basis redelijk goed b
 
 Dit doel hangt best goed samen met mijn eerste doel. Ik ben vaak te veel gefocust op het eindresultaat, en dan gebruik ik AI om dingen op te lossen die ik eigenlijk zelf zou moeten leren. Daardoor leer ik het uiteindelijk niet echt goed.
 
-## <mark><samp>**<sup><sub>Doel 3</sup></sub>** | Niet automatisch akkoord gaan met ideeen van andere</samp></mark>
+## <mark><samp>**<sup><sub>Doel 3</sup></sub>** | Niet automatisch akkoord gaan met ideeën van andere</samp></mark>
 
 Ik vind mezelf niet super sterk in conceptueel denken. In een groep laat ik het daarom vaak aan anderen over. Ik ga soms te snel akkoord met ideeën, ook als ik eigenlijk denk dat ze niet zo goed zijn. Ik wil leren om vaker mijn mening te geven.
