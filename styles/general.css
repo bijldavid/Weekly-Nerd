@@ -8,8 +8,10 @@
 
     --beige-1: color(display-p3 1 0.992 0.980 / 1);
     --beige-2: color(display-p3 0.964 0.954 0.934 / 1);
+    --beige-2-50: color(display-p3 0.935 0.910 0.880 / 1);
     --beige-3: color(display-p3 0.878 0.854 0.803 / 1);
     --beige-4: color(display-p3 0.729 0.709 0.658 / 1);
+    --beige-5: color(display-p3 0.429 0.409 0.358 / 1);
 
     --font-black: #292929;
 
@@ -46,9 +48,10 @@ a {
     text-decoration: none;
 }
 
-ul {
+ul:not([role="list"]) {
     list-style-type: none;
 }
+
 
 img {
     display: block;
@@ -96,17 +99,14 @@ main {
     background-color: var(--beige-1);
 }
 
-pre {
-    font-size: .55vw;
-    width: 100%;
-    color: var(--orange);
+details summary {
+    list-style: none;
+  }
+  
+  details summary::marker {
     display: none;
-}
-
-pre {
+  }
+  
+  details summary::-webkit-details-marker {
     display: none;
-}
-
-pre#axe-1 {
-    display: block;
-}
+  }

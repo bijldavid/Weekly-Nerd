@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/weekly-nerds.css">
+    <link rel="stylesheet" href="styles/markdown.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eym8jyh.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <title>Weekly Nerd</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">DAVID</a>
+            <div>
+                <a href="weekly-nerds.html">Weekly Nerds</a>
+                <a href="goals.html">Goals</a>
+                <a href="#">My work</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="weekly-nerds">
+            <div class="weekly-nerds-container-wrapper">
+                <div class="weekly-nerds-container">
+                    <!-- decorative lines -->
+                    <svg>
+                        <line x1="1" y1="0" x2="1" y2="100%" />
+                    </svg>
+                    <svg>
+                        <line x1="1" y1="0" x2="1" y2="100%" />
+                    </svg>
+
+                    <section>
+                        <h1>Weekly Nerds</h1>
+                        <div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 1</p>
+                                        <date>3 t/m 7 FEB</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>The rule of least power</h2>
+                                            <small>By Kilian Valkhof</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Idee:</strong> gebruik de <strong class="highlight">minst
+                                                    krachtige
+                                                    taal/structuur</strong> die nog steeds doet wat je wil</p>
+
+                                            <p class="section-title">Waarom dit belangrijk is:</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>makkelijker te lezen</li>
+                                                <li>beter voor toegankelijkheid</li>
+                                                <li>eenvoudiger te hergebruiken / doorzoeken</li>
+                                            </ul>
+                                            <p>→ Hoe krachtiger de taal, hoe groter de kans dat je dingen
+                                                moeilijker maakt dan nodig</p>
+
+                                            <p class="section-title">Voorbeeld:</p>
+                                            <pre class="code-example">&lt;p&gt;This is a paragraph&lt;/p&gt;</pre>
+                                            <p>vs. een <code>&lt;div&gt;</code> met JS → complex, slechter
+                                                voor screenreaders en onderhoud</p>
+
+                                            <p class="section-title">Toepassing op het web:</p>
+                                            <p>Veel websites gebruiken JS waar dat niet nodig is</p>
+                                            <pre
+                                                class="code-example"><code>&lt;button onClick="window.location = 'url'"&gt;Link&lt;/button&gt;</code></pre>
+                                            <p>→ Beter: <code>&lt;a href="url"&gt;Link&lt;/a&gt;</code></p>
+
+                                            <p class="section-title">Vuistregel:</p>
+                                            <p><strong class="highlight">HTML &gt; CSS &gt; JS</strong></p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Probeer altijd eerst met HTML</li>
+                                                <li>Alleen als het niet anders kan: CSS</li>
+                                                <li>JS pas als laatste redmiddel</li>
+                                            </ul>
+
+                                            <p class="section-title">Valkuilen:</p>
+                                            <p>Veel devs gebruiken meteen JS of frameworks, terwijl een simpele
+                                                HTML-oplossing vaak beter is</p>
+
+                                            <p class="section-title">Toegankelijkheid:</p>
+                                            <p>Minder krachtige oplossingen zijn meestal beter leesbaar voor
+                                                screenreaders
+                                            </p>
+                                            <p>→ Ook beter voor SEO, prestaties, en onderhoud</p>
+
+                                            <blockquote class="quote">
+                                                "Use the least powerful language suitable for a given purpose"
+                                            </blockquote>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 2</p>
+                                        <date>10 t/m 14 FEB</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2 class="empty">Title</h2>
+                                            <small>❌ Geen spreker</small>
+                                        </summary>
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 3</p>
+                                        <date>17 t/m 21 FEB</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2 class="empty">Title</h2>
+                                            <small>❌ Geen spreker</small>
+                                        </summary>
+                                    </details>
+                                </div>
+                            </div>
+
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 4</p>
+                                        <date>24 t/m 28 FEB</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Betalen voor het web</h2>
+                                            <small>Peter-Paul Koch</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Probleem</strong></p>
+                                            <p>Sites zijn 'gratis' omdat advertenties betalen</p>
+                                            <p>→ Gevolg: tracking, datalekken, ads, slechte UX</p>
+                                            <p>→ Iedereen klaagt over privacy, niemand over geld geven aan sites</p>
+
+                                            <p class="section-title">Zijn idee</p>
+                                            <p>Geef zelf geld aan sites die je goed vindt</p>
+                                            <p>→ Denk aan 5-20 cent per dag per site</p>
+                                            <p>→ Kleine betalingen = digitale dankbaarheid</p>
+                                            <p>→ Betere content, gezondere webcultuur</p>
+
+                                            <p class="section-title">Waarom ads slecht zijn</p>
+                                            <p>→ Aandacht = geld → makers gaan voor kliks, niet voor kwaliteit</p>
+                                            <p>→ Design & UX worden ondergeschikt aan winst</p>
+
+                                            <p class="section-title">Web Monetization = alternatief</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Browser ziet een <code>monetization</code> tag</li>
+                                                <li>Betaling start automatisch via wallet</li>
+                                                <li>Zolang je actief bent, krijgt de site geld</li>
+                                            </ul>
+
+                                            <p class="section-title">Samenvatting</p>
+                                            <p>→ Nu bepaalt site hoeveel iets kost</p>
+                                            <p>→ Alternatief: jij bepaalt wat content waard is</p>
+
+                                            <blockquote class="quote">
+                                                "Betaal voor wat je leest, anders lees je alleen wat de rijken willen
+                                                dat je
+                                                leest."
+                                            </blockquote>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 5</p>
+                                        <date>3 t/m 7 MAR</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Typography</h2>
+                                            <small>Roel Nieskens</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Wat zijn fonts eigenlijk?</strong></p>
+                                            <p>Een font is een bestand dat beschrijft hoe letters eruitzien.</p>
+                                            <p>→ Het verschil tussen een <strong>typeface</strong> en een
+                                                <strong>font</strong>:
+                                            </p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Typeface = het ontwerp</li>
+                                                <li>Font = de technische uitvoering van dat ontwerp (de file dus)</li>
+                                            </ul>
+
+                                            <p class="section-title">Glyphs:</p>
+                                            <p>Een glyph is een visuele representatie van een karakter.</p>
+                                            <p>Bijv. de hoofdletter <em>A</em> in cursief is een andere glyph dan een
+                                                gewone
+                                                A</p>
+                                            <p>→ één karakter kan dus meerdere glyphs hebben (handig voor opmaak)</p>
+
+                                            <p class="section-title">Ligatures:</p>
+                                            <p>Samengevoegde tekens, zoals <code>ﬁ</code>, <code>ﬂ</code>,
+                                                <code>æ</code>
+                                            </p>
+                                            <p>→ om visueel lelijke combinaties te fixen</p>
+                                            <p>→ sommige fonts hebben ook "discretionary ligatures" (meer voor stijl dan
+                                                noodzaak)</p>
+
+                                            <p class="section-title">Kerning:</p>
+                                            <p>Letterspatiëring tussen specifieke paren</p>
+                                            <p>→ zorgt dat letters niet raar ver uit elkaar of te dicht op elkaar staan
+                                            </p>
+                                            <p>→ bijv. AV of WA ziet er zonder kerning best lelijk uit</p>
+
+                                            <p class="section-title">Layout features (OpenType magic):</p>
+                                            <p>Veel fonts ondersteunen verborgen typografische functies:</p>
+                                            <ul role="list" class="notes-list">
+                                                <li><strong>Fractions</strong> → bijv. ½ i.p.v. 1/2</li>
+                                                <li><strong>Stylistic Sets</strong> → alternatieve glyphs met een andere
+                                                    stijl</li>
+                                                <li><strong>Access All Alternates</strong> → zelf glyphs kiezen</li>
+                                                <li><strong>Tabular Figures</strong> → cijfers met gelijke breedte
+                                                    (handig
+                                                    bij kolommen)</li>
+                                                <li><strong>Oldstyle Figures</strong> → cijfers met wisselende hoogte,
+                                                    vloeien beter mee in tekst</li>
+                                                <li><strong>Small Caps, Superscript, Subscript</strong> → vaak gewoon
+                                                    ingebouwd</li>
+                                            </ul>
+
+                                            <p class="section-title">Swoopy stuff:</p>
+                                            <p>Decoratieve elementen zoals sierlijke swashes bij hoofdletters</p>
+                                            <p>→ meestal onderdeel van stylistic sets</p>
+                                            <p>→ niet functioneel, maar wel mooi als je ‘t subtiel gebruikt</p>
+
+                                            <p class="section-title">OpenType:</p>
+                                            <p>Font-formaat dat al die extra features ondersteunt</p>
+                                            <p>→ wordt breed ondersteund in moderne browsers</p>
+                                            <p>→ maakt typografie op het web veel krachtiger (als je weet waar je het
+                                                kunt
+                                                aanzetten)</p>
+
+                                            <p class="section-title">Variable Fonts:</p>
+                                            <p>Eén enkel fontbestand met meerdere stijlen (bijv. gewicht, breedte,
+                                                schuinheid)</p>
+                                            <p>→ maakt aparte bold/italic/etc. bestanden overbodig</p>
+                                            <p>→ lichter voor de browser én meer controle voor de ontwerper</p>
+
+                                            <br>
+
+                                            <p>Handige tool: <a href="https://wakamaifondue.com/"
+                                                    target="_blank">https://wakamaifondue.com/</a></p>
+                                            <small>Gemaakt door: Roel Nieskens</small>
+
+                                        </div>
+
+
+                                    </details>
+                                </div>
+
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Beyond Tweening</h2>
+                                            <small>Cassie Evans</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Wat is tweening?</strong></p>
+                                            <p>Tweening (inbetweening) is het automatisch genereren van tussenliggende
+                                                frames tussen twee keyframes.</p>
+                                            <p>→ In code: je definieert een begin- en eindstaat, en de computer vult de
+                                                rest in.</p>
+
+                                            <p class="section-title">quickSetter()</p>
+                                            <p>Soort snelweg om direct een CSS-eigenschap aan te passen</p>
+                                            <p>→ goed voor dingen die vaak veranderen, zoals muis of scroll</p>
+
+                                            <p class="section-title">utils</p>
+                                            <p>Verzameling handige tools in gsap (om dingen korter/simpeler te
+                                                schrijven)</p>
+
+                                            <ul role="list" class="notes-list">
+                                                <li><strong>utils.random()</strong><br>Geeft elke keer een willekeurig
+                                                    getal (bijv. tussen 0 en 100)</li>
+                                                <li><strong>utils.wrap()</strong><br>Zorgt dat een waarde “rondloopt”
+                                                    (bijv. 370° wordt weer 10°)<br>→ handig bij rotaties of carrousels
+                                                </li>
+                                                <li><strong>utils.pipe()</strong><br>Plakt meerdere functies achter
+                                                    elkaar → output van de ene is input voor de volgende<br>→ handig als
+                                                    je dingen wil combineren (bijv. afronden + beperken tot max)</li>
+                                            </ul>
+
+                                            <p class="section-title">matchMedia()</p>
+                                            <p>Laat je verschillende animaties maken voor mobiel vs. desktop</p>
+                                            <p>→ beetje zoals media queries maar dan in JS</p>
+
+                                            <p class="section-title">Control methods (zoals <code>.pause()</code>,
+                                                <code>.resume()</code>, <code>.reverse()</code>, <code>.restart()</code>
+                                                etc.)
+                                            </p>
+                                            <p>Hiermee kun je een animatie stoppen, verder laten gaan, omkeren of
+                                                opnieuw afspelen</p>
+                                            <p>→ je kunt dus zelf bepalen <em>wanneer</em> iets beweegt, niet alleen
+                                                <em>hoe</em>
+                                            </p>
+
+                                            <p class="section-title">Helper functions (zoals <code>.to()</code>,
+                                                <code>.from()</code>, <code>.fromTo()</code>)
+                                            </p>
+                                            <p>Standaard GSAP functies om dingen te animeren</p>
+                                            <p>→ <code>.to()</code> = ga naar bepaalde waarde</p>
+                                            <p>→ <code>.from()</code> = begin vanaf die waarde</p>
+                                            <p>→ <code>.fromTo()</code> = begin op X en ga naar Y</p>
+
+                                        </div>
+
+
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 6</p>
+                                        <date>10 t/m 14 MAR</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+
+                                    <details>
+                                        <summary>
+                                            <h2>Design for Flexibility</h2>
+                                            <small>Nils Binder</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Flexibel ontwerpen = ontwerpen voor verandering</strong></p>
+                                            <p>In plaats van alles pixel-perfect vastzetten, ruimte laten voor groei,
+                                                aanpassing en responsiviteit</p>
+
+                                            <p class="section-title">CSS-evolutie: van vaste breedtes naar dynamische
+                                                wrappers</p>
+                                            <p>→ Oude aanpak: vaste <code>max-width</code>, vaste <code>margin</code>,
+                                                vaste <code>padding</code></p>
+                                            <p>→ Nieuwe aanpak: gebruik van <code>min()</code>, <code>max()</code>,
+                                                <code>clamp()</code> en <code>margin-inline</code> voor flexibele
+                                                layouts
+                                            </p>
+
+                                            <pre class="code-example">
+.wrapper {
+width: min(100% - 3rem, 75rem);
+margin-inline: auto;
+}</pre>
+
+                                            <p class="section-title">Figma en CSS: dezelfde taal spreken</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Figma gebruikt units als px, %, rem</li>
+                                                <li>CSS heeft extra units: em, ch, ex, vw, vh, vmin, vmax</li>
+                                            </ul>
+                                            <p>→ Consistent gebruik van units zorgt voor betere samenwerking tussen
+                                                design en development</p>
+
+                                            <p class="section-title">Whitespace is geen verspilde ruimte</p>
+                                            <p>Strategisch gebruik van witruimte verbetert leesbaarheid en esthetiek</p>
+
+                                            <p class="section-title">Responsieve eenheden in CSS</p>
+                                            <ul role="list" class="notes-list">
+                                                <li><code>vw</code>, <code>vh</code>, <code>vmin</code>,
+                                                    <code>vmax</code>: gebaseerd op viewport-afmetingen
+                                                </li>
+                                                <li><code>qh</code>, <code>qw</code>, <code>qi</code>, <code>qb</code>,
+                                                    <code>qmin</code>, <code>qmax</code>: gebaseerd op
+                                                    container-afmetingen
+                                                </li>
+                                            </ul>
+                                            <p>→ deze units maken het mogelijk om layouts te ontwerpen die zich
+                                                aanpassen aan verschillende schermgroottes en resoluties</p>
+
+                                        </div>
+
+
+                                    </details>
+                                </div>
+
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Imperative vs. Declarative Design</h2>
+                                            <small>Jeremy Keith</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Imperative programming</strong></p>
+                                            <p>Je beschrijft stap voor stap wat de computer moet doen</p>
+                                            <p>→ bijv. in JS: arrays maken, loops schrijven, if/else gebruiken</p>
+                                            <p>→ veel controle, maar ook meer kans op fouten</p>
+
+                                            <p class="section-title">Declarative programming</p>
+                                            <p>Je beschrijft wat je wilt bereiken, niet hoe</p>
+                                            <p>→ bijv. in HTML/CSS: je zegt wat iets is of hoe het eruit moet zien</p>
+                                            <p>→ browser regelt de details</p>
+
+                                            <p class="section-title">Voorbeelden op het web:</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>HTML = declaratief → je zegt: “dit is een knop”</li>
+                                                <li>CSS = declaratief → je zegt: “maak dit rood”</li>
+                                                <li>JS = imperatief → je zegt: “voeg deze class toe als er geklikt
+                                                    wordt”</li>
+                                            </ul>
+
+                                            <p class="section-title">Mindset:</p>
+                                            <p>Declaratief = browser vertrouwen, minder controle maar meer veerkracht
+                                            </p>
+                                            <p>Imperatief = alles zelf regelen, meer controle maar ook meer
+                                                verantwoordelijkheid</p>
+
+                                            <p class="section-title">Design systemen:</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Imperatief: focus op exacte uitkomsten (precies deze knop, precies
+                                                    deze kleur)</li>
+                                                <li>Declaratief: focus op regels en systemen (bijv. “hoverkleur is
+                                                    altijd 5% donkerder”)</li>
+                                            </ul>
+                                            <p>→ makkelijker schaalbaar en aanpasbaar</p>
+
+                                        </div>
+
+
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 7</p>
+                                        <date>17 t/m 21 MAR</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>CSS Character Animations</h2>
+                                            <small>Julia Miocene</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>CSS = niet alleen styling, maar ook tekenen en animeren</strong>
+                                            </p>
+                                            <p>Julia maakt complete tekeningen en animaties met alleen CSS</p>
+                                            <p>→ Geen JS, geen SVG, alleen <code>div</code>s, <code>::before</code>,
+                                                <code>::after</code>, <code>transform</code>, <code>position</code>,
+                                                etc.
+                                            </p>
+
+                                            <p class="section-title">Alles is een <code>div</code>:</p>
+                                            <p>bijv. een hoofd is een <code>div</code>, met daarin twee ogen
+                                                (<code>div</code>s), met daarin pupillen (<code>div</code>s)</p>
+                                            <p>→ alles wordt gepositioneerd met <code>position: absolute</code> binnen
+                                                een relatief gepositioneerde ouder</p>
+
+                                            <p class="section-title"><code>transform-origin</code> = scharnierpunt:</p>
+                                            <p>Bepaalt waar een element draait of schaalt</p>
+                                            <p>→ bijv. <code>transform-origin: bottom center;</code> laat iets draaien
+                                                vanaf de onderkant</p>
+                                            <p>→ handig voor armen, benen, wijzers, enz.</p>
+
+                                            <p class="section-title">CSS features die ze gebruikt:</p>
+                                            <ul role="list" class="notes-list">
+                                                <li><code>::before</code> en <code>::after</code> pseudo-elementen</li>
+                                                <li><code>transform</code>, <code>rotate</code>, <code>scale</code>,
+                                                    enz.</li>
+                                                <li><code>position: absolute</code> en <code>relative</code> voor layout
+                                                </li>
+                                                <li><code>transform-origin</code> voor animatie-assen</li>
+                                                <li><code>clip-path</code>, <code>border-radius</code>,
+                                                    <code>gradients</code> voor vormen
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 8</p>
+                                        <date>24 t/m 28 MAR</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2 class="empty">Title</h2>
+                                            <small>❌ Geen spreker</small>
+                                        </summary>
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 9</p>
+                                        <date>31 t/m 4 APR</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+
+                                    <details>
+                                        <summary>
+                                            <h2>Circuit Bending</h2>
+                                            <small>Rosa</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Over Rosa</strong></p>
+                                            <p>→ Technische maker & hacker, ex-CMD</p>
+                                            <p>→ Doet veel met e-waste, livesets, workshops en hacklabs</p>
+                                            <p>→ Alles wat ze bedenkt, wilt ze zelf maken</p>
+
+                                            <p class="section-title">Hacker-mindset</p>
+                                            <p>→ Zelf CMS bouwen, eigen servers draaien, los van grote platforms</p>
+                                            <p>→ Platform-agnostisch = geen voorkeur voor merken of systemen</p>
+
+                                            <p class="section-title">DIY mentaliteit</p>
+                                            <p>→ Zelf doen, zelf slopen, zelf leren</p>
+                                            <p>→ Onafhankelijk kunnen bouwen, denken & maken</p>
+
+                                            <p class="section-title">Tools die ze gebruikt</p>
+                                            <ul role="list" class="notes-list">
+                                                <li><strong>ImageMagick</strong> → photoshop via de terminal</li>
+                                                <li><strong>Bash</strong> → automatiseren & bewerken via command-line
+                                                </li>
+                                                <li><strong>Audio hacking</strong> → met kabels/mixers gek geluid maken
+                                                    (bewust rauw)</li>
+                                            </ul>
+
+                                        </div>
+
+
+                                    </details>
+                                </div>
+
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Anchor Positioning</h2>
+                                            <small>Sanne t' Hooft</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Wat is het?</strong></p>
+                                            <p>Nieuwe CSS manier om iets te positioneren <strong>tov een ander
+                                                    element</strong> (niet meer alleen tov parent)</p>
+                                            <p>→ handig voor dingen als tooltips, dropdowns, floating buttons</p>
+
+                                            <p class="section-title">Waarom handig?</p>
+                                            <p>Voorheen moest je JS gebruiken om bv. een tooltip goed onder een knop te
+                                                zetten</p>
+                                            <p>→ nu kan dat gewoon met CSS</p>
+
+                                            <p class="section-title">Hoe werkt het?</p>
+                                            <p>1. geef een element een <code>anchor-name</code>:</p>
+
+                                            <pre class="code-example">
+.button {
+anchor-name: --btn;
+}</pre>
+
+                                            <p>2. gebruik dat anchor bij een ander element om positie op te baseren:</p>
+
+                                            <pre class="code-example">
+.tooltip {
+position: absolute;
+top: anchor(--btn bottom);
+left: anchor(--btn left);
+}</pre>
+
+                                            <p>→ tooltip wordt dan gepositioneerd aan onderkant van de knop</p>
+
+                                            <p class="section-title">Andere dingen die je kunt doen:</p>
+                                            <ul role="list" class="notes-list">
+                                                <li><code>block-start</code>, <code>inline-end</code>, enz. werken ook
+                                                </li>
+                                                <li>handig bij vertical vs horizontal schrijven</li>
+                                                <li>kan ook met <code>inset</code>, <code>right</code>,
+                                                    <code>bottom</code> enz.
+                                                </li>
+                                            </ul>
+
+                                            <p class="section-title">Fallbacks als er geen ruimte is
+                                                (<code>@position-fallback</code>)</p>
+                                            <p>→ voorbeeld: dropdown past niet boven knop, dan maar onder:</p>
+
+                                            <pre class="code-example">
+@position-fallback {
+@try {
+    top: anchor(--btn bottom);
+}
+@try {
+    bottom: anchor(--btn top);
+}
+}</pre>
+
+                                            <p class="section-title">Browser support:</p>
+                                            <p>→ alleen in Chrome (met flag aan) en in de toekomst ook in andere
+                                                browsers</p>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 10</p>
+                                        <date>7 t/m 11 APR</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Receipt Printers 101</h2>
+                                            <small>Niels Leenheer</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Wat zijn receipt printers?</strong></p>
+                                            <p>Printers die kassabonnen printen, vaak via USB, serieel, netwerk of
+                                                Bluetooth.</p>
+                                            <p>→ Gebruiken meestal ESC/POS-taal (van Epson) of StarPRNT (van Star).</p>
+                                            <p>→ ESC/POS = oude printertaal met escape-codes voor opmaak (zoals bold,
+                                                underline).</p>
+
+                                            <p class="section-title">Printertalen:</p>
+                                            <ul role="list" class="notes-list">
+                                                <li><strong>ESC/POS</strong>: standaardtaal voor veel printers, gebruikt
+                                                    ASCII + escape-codes.</li>
+                                                <li><strong>StarPRNT</strong>: eigen taal van Star-printers, niet
+                                                    compatibel met ESC/POS, tenzij handmatig ingesteld.</li>
+                                            </ul>
+
+                                            <p class="section-title">Libraries van Niels:</p>
+                                            <p><strong>ReceiptPrinterEncoder</strong>: maakt ESC/POS- of
+                                                StarPRNT-commando's aan.</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Kan tekst, stijlen, tabellen, barcodes, QR-codes en afbeeldingen
+                                                    toevoegen.</li>
+                                                <li>Combineert eerdere libraries (EscPosEncoder en StarPrntEncoder) in
+                                                    één.</li>
+                                            </ul>
+
+                                            <p class="section-title">Data versturen naar de printer:</p>
+                                            <p>Printers kunnen verbonden zijn via USB, serieel, netwerk of Bluetooth.
+                                            </p>
+                                            <p>Browser-gebaseerd printen vereist specifieke API's:</p>
+                                            <ul role="list" class="notes-list">
+                                                <li><strong>WebUSB</strong>: voor USB-printers (werkt niet op Windows
+                                                    zonder workaround).</li>
+                                                <li><strong>WebSerial</strong>: voor seriële verbindingen of virtuele
+                                                    seriële poorten.</li>
+                                                <li><strong>WebBluetooth</strong>: alleen voor Bluetooth Low
+                                                    Energy-apparaten.</li>
+                                            </ul>
+
+                                            <p class="section-title">Printen vanuit de browser:</p>
+                                            <p>Vereist een Chromium-gebaseerde browser.</p>
+                                            <p>→ Beperkingen: Netwerkprinters kunnen niet direct benaderd worden vanuit
+                                                de browser vanwege beveiligingsredenen.</p>
+
+                                            <p class="section-title">Printen vanaf de server (Node.js):</p>
+                                            <ul role="list" class="notes-list">
+                                                <li><strong>NetworkReceiptPrinter</strong>: voor netwerkprinters.</li>
+                                                <li><strong>SystemReceiptPrinter</strong>: gebruikt het
+                                                    systeemprinterstuurprogramma, ongeacht de verbindingsmethode.</li>
+                                            </ul>
+
+                                        </div>
+
+
+
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 11</p>
+                                        <date>14 t/m 18 APR</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Accessibility & Semantiek</h2>
+                                            <small>Erik Kroes</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Wat is accessibility</strong></p>
+                                            <p>Het gaat erom dat iedereen je site kan gebruiken, ook mensen met een
+                                                beperking</p>
+                                            <p>→ Het is niet "wel of niet toegankelijk", je kunt altijd iets verbeteren
+                                            </p>
+                                            <p>→ Kleine dingen maken al verschil</p>
+
+                                            <p class="section-title">Hoe zorg je dat iets toegankelijk is?</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Gebruik gewoon goede HTML (dus <code>&lt;button&gt;</code>,
+                                                    <code>&lt;a&gt;</code>, <code>&lt;section&gt;</code>, etc.)
+                                                </li>
+                                                <li>Let op kleurcontrast</li>
+                                                <li>Gebruik niet teveel rare ARIA-rollen als het niet hoeft</li>
+                                                <li>Test ook met screenreader of mensen zelf, niet alleen met tools</li>
+                                            </ul>
+
+                                            <p class="section-title">Waar heeft Erik gewerkt?</p>
+                                            <p>ING, IKEA, WeTransfer, etc.</p>
+                                            <p>→ Werkt nu als freelancer bij grote bedrijven</p>
+
+                                            <p class="section-title">Tekstgrootte en headings</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Begin met <code>&lt;h1&gt;</code>, daarna <code>&lt;h2&gt;</code>,
+                                                    enz. → geen levels overslaan</li>
+                                                <li>Maakt het duidelijker voor screenreaders</li>
+                                                <li>Gebruik <code>rem</code> voor schaalbare tekst i.p.v.
+                                                    <code>px</code>
+                                                </li>
+                                            </ul>
+
+                                            <p class="section-title">Welke HTML-tags moet je gebruiken?</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Gebruik semantische tags: <code>&lt;nav&gt;</code>,
+                                                    <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>,
+                                                    <code>&lt;footer&gt;</code>, enz.
+                                                </li>
+                                                <li>Geen <code>&lt;div&gt;</code> of <code>&lt;span&gt;</code> gebruiken
+                                                    als je iets beters hebt</li>
+                                                <li>Goed voor toegankelijkheid én SEO</li>
+                                            </ul>
+
+                                            <p class="section-title">Kleurcontrast</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Tekst moet goed leesbaar zijn tegen de achtergrond</li>
+                                                <li>Check contrast met een tool (WCAG regels)</li>
+                                            </ul>
+
+                                            <p class="section-title">Buttons vs. links</p>
+                                            <ul role="list" class="notes-list">
+                                                <li><code>&lt;button&gt;</code> = voor acties (bijv. iets openen, iets
+                                                    versturen)</li>
+                                                <li><code>&lt;a&gt;</code> = voor navigatie (naar andere pagina of plek
+                                                    op de pagina)</li>
+                                                <li>Niet door elkaar halen, dat is verwarrend</li>
+                                            </ul>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Thinking Outside of the Accessibility Box</h2>
+                                            <small>Nienke de Keijzer</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Over het project:</strong></p>
+                                            <p>Nienke onderzocht de toegankelijkheid van de GVB-app als afstudeerproject
+                                                bij CMD.</p>
+                                            <p>→ Ze ontdekte dat de app niet goed bruikbaar was voor mensen met een
+                                                beperking.</p>
+                                            <p>→ Ze ontwierp een nieuwe versie van de app met toegankelijkheid als
+                                                uitgangspunt.</p>
+                                            <p>→ GVB was zo onder de indruk dat ze haar aanbevelingen hebben overgenomen
+                                                en haar hebben aangenomen.</p>
+
+                                            <p class="section-title">Belangrijkste inzichten:</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Toegankelijkheid gaat verder dan alleen voldoen aan regels; het
+                                                    draait om echte bruikbaarheid voor iedereen.</li>
+                                                <li>Door gebruikers met beperkingen te betrekken bij het ontwerp, krijg
+                                                    je waardevolle feedback.</li>
+                                                <li>Kleine aanpassingen kunnen een groot verschil maken in
+                                                    gebruiksvriendelijkheid.</li>
+                                            </ul>
+
+                                            <p class="section-title">Aanbevelingen voor ontwerpers:</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Begin met toegankelijkheid in gedachten, niet als bijzaak.</li>
+                                                <li>Test je ontwerpen met diverse gebruikersgroepen.</li>
+                                                <li>Maak gebruik van semantische HTML en zorg voor voldoende
+                                                    kleurcontrast.</li>
+                                                <li>Zorg voor duidelijke navigatie en leesbare tekstgroottes.</li>
+                                            </ul>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

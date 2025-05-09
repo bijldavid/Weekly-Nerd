@@ -295,7 +295,7 @@
     padding: 0 3vw var(--padding) 3vw;
 }
 
-.projects-container-wrapper {
+.about-me-container-wrapper {
     container-type: inline-size;
     max-width: 1100px;
     margin: 0 auto;

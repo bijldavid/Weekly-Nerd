@@ -1,0 +1,216 @@
+/* ============================================================================== */
+/* WEEKLY NERDS */
+/* ============================================================================== */
+
+.weekly-nerds {
+    position: relative;
+    background-color: var(--beige-2);
+    padding: 0 3vw var(--padding) 3vw;
+}
+
+.weekly-nerds-container-wrapper {
+    container-type: inline-size;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.weekly-nerds-container {
+    position: relative;
+    padding: 1.33cqw;
+    container-type: inline-size;
+}
+
+/* decorative lines */
+.weekly-nerds-container::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: calc(100% + var(--padding));
+    background-color: var(--beige-4);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.weekly-nerds-container svg {
+    position: absolute;
+    stroke: var(--beige-4);
+    stroke-dasharray: 8 14;
+    height: calc(100% + var(--padding));
+    width: .15cqw;
+    top: 0;
+}
+
+.weekly-nerds-container svg:nth-of-type(1) {
+    left: 6.34cqw;
+}
+
+.weekly-nerds-container svg:nth-of-type(2) {
+    right: 6.34cqw;
+}
+
+
+.weekly-nerds-container section {
+    padding: 10cqw 9cqw 6cqw 9cqw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.weekly-nerds-container section h1 {
+    position: relative;
+    white-space: nowrap;
+    font-size: 4.5cqw;
+    line-height: 4.5cqw;
+    font-weight: var(--heavy);
+    font-family: "articulat-cf", sans-serif;
+    font-style: normal;
+    color: var(--font-black);
+}
+
+.weekly-nerds-container section h1::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 1cqw;
+    background-color: var(--orange);
+    left: -4.525cqw;
+    top: 0;
+}
+
+.weekly-nerds-container section h1::after {
+    position: absolute;
+    content: '';
+    bottom: -2.5cqw;
+    left: calc(-1 * (100vw - 100%) / 2);
+    width: 100vw;
+    height: 1px;
+    background-color: var(--beige-4);
+}
+
+.weekly-nerds-container section>div {
+    margin-top: 7.5cqw;
+    display: flex;
+    flex-direction: column;
+    gap: 3cqw;
+}
+
+.weekly-nerds-container section>div .week {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1cqw;
+}
+
+.weekly-nerds-container section>div .week .college {
+    background-color: var(--beige-2-50);
+    border-radius: 1cqw;
+    width: 100%;
+}
+
+.weekly-nerds-container section>div .week aside {
+    position: absolute;
+    top: 2cqw;
+    left: calc(((9cqw - 6.34cqw + 1.33cqw) * -1) - 2cqw);
+    translate: -100% 0;
+    height: 100%;
+}
+
+.weekly-nerds-container section>div .week aside div {
+    position: sticky;
+    top: 2cqw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: .5cqw;
+}
+
+.weekly-nerds-container section>div .week aside p {
+    position: relative;
+    font-family: rm-mono;
+    font-size: 1.33cqw;
+    width: max-content;
+    background-color: var(--beige-4);
+    color: white;
+    padding: .75cqw 1.5cqw;
+    border-radius: .75cqw;
+}
+
+.weekly-nerds-container section>div .week aside p::before {
+    content: '';
+    position: absolute;
+    background-color: var(--orange);
+    height: 1.5cqw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    top: 50%;
+    right: -2cqw;
+    translate: 50% -50%;
+}
+
+.weekly-nerds-container section>div .week aside date {
+    font-family: rm-mono;
+    font-size: 1.33cqw;
+    width: max-content;
+    color: var(--beige-5);
+}
+
+.weekly-nerds-container section>div .week .college details {
+    overflow: hidden;
+}
+
+.weekly-nerds-container section>div .week .college details::details-content {
+    block-size: 0;
+    transition: block-size .3s ease, content-visibility .3s ease allow-discrete;
+}
+
+.weekly-nerds-container section>div .week .college details[open]::details-content {
+    block-size: auto;
+}
+
+.weekly-nerds-container section>div .week .college details summary {
+    position: relative;
+    padding: 3cqw 4cqw;
+}
+
+.weekly-nerds-container section>div .week .college:not(:has(.empty)) details summary::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/arrow.svg);
+    background-size: 1cqw;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 50%;
+    right: 4cqw;
+    translate: 0 -50%;
+    height: 2cqw;
+    aspect-ratio: 1;
+    opacity: .5;
+    transform: rotate(0deg);
+    transition: transform .3s ease;
+}
+
+.weekly-nerds-container section>div .week .college details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+.weekly-nerds-container section>div .week .college details .notes {
+    margin: 0 4cqw 3cqw 4cqw;
+    padding-top: 1cqw;
+    border-top: 1px solid var(--beige-4);
+}
+
+.weekly-nerds-container section>div .week .college details summary>h2 {
+    font-size: 2.5cqw;
+    font-weight: var(--extra-bold);
+    font-family: "articulat-cf", sans-serif;
+    font-style: normal;
+    color: var(--font-black);
+}
+
+.weekly-nerds-container section>div .week .college details summary>small {
+    font-family: rm-mono;
+    color: var(--beige-5);
+    text-transform: uppercase;
+    font-size: 1.3cqw;
+}
+
