@@ -10,6 +10,14 @@
     font-weight: 700;
 }
 
+.notes p, .notes li {
+    font-size: 1.5cqw;
+}
+
+.notes small {
+    font-size: 1.2cqw;
+}
+
 .notes-list {
     padding-left: 1.5em;
     margin-bottom: 1em;

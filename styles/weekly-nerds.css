@@ -175,7 +175,7 @@
 .weekly-nerds-container section>div .week .college:not(:has(.empty)) details summary::after {
     content: '';
     position: absolute;
-    background-image: url(../images/arrow.svg);
+    background-image: url(../images/arrow-orange.svg);
     background-size: 1cqw;
     background-position: center;
     background-repeat: no-repeat;
@@ -184,7 +184,6 @@
     translate: 0 -50%;
     height: 2cqw;
     aspect-ratio: 1;
-    opacity: .5;
     transform: rotate(0deg);
     transition: transform .3s ease;
 }
