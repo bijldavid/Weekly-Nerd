@@ -33,7 +33,7 @@
 .threeD-model {
     animation: spin var(--animation-duration) linear infinite;
     translate: 0 5em;
-    /* transform: rotateY(0) rotateX(-20deg); */
+    /* transform: rotateY(-140deg) rotateX(-20deg); */
 }
 
 @keyframes spin {
@@ -58,7 +58,7 @@
 /* SHADING */
 /* ========================== */
 
-.threeD-model div:not(.keyboard-container):not(.keyboard-container div):not(.screen):not(.video-container)::before {
+.threeD-model div:not(.keyboard-container):not(.keyboard-container div):not(.screen):not(.video-container):not(.reflection)::before {
     position: absolute;
     content: "";
     height: 100%;
@@ -340,14 +340,35 @@
     place-items: center;
 }
 
+@property --gradient-position {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%;
+}
+
+@keyframes gradient-animation {
+    0% {
+        --gradient-position: 0%;
+    }
+}
+
 .threeD-model .screen::before {
     content: '';
     z-index: 2;
     position: absolute;
     height: 100%;
     width: 100%;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 25%) 40%, transparent 0);
-    opacity: 1 !important;
+
+    background: linear-gradient(145deg,
+            rgba(0, 0, 0, 0) 45%,
+            rgba(255, 255, 255, 1) 45%,
+            rgba(255, 255, 255, 1) 55%,
+            rgba(0, 0, 0, 0) 55%);
+    background-size: 400%;
+    background-position: var(--gradient-position);
+    animation: gradient-animation var(--animation-duration) ease -3s infinite;
+
+    opacity: .3 !important;
     mix-blend-mode: overlay;
 }
 
@@ -365,4 +386,124 @@
     width: auto;
     display: block;
     rotate: x 180deg;
+}
+
+/* ============================================================================== */
+/* APPLE LOGO + REFLECTION */
+/* ============================================================================== */
+
+.threeD-model .apple-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: calc(100% / 6);
+    aspect-ratio: 1;
+    rotate: 180deg;
+}
+
+.threeD-model .top>div:nth-of-type(3)::after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    rotate: y 180deg;
+    background: linear-gradient(145deg,rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 65%);
+    background-size: 450%;
+    background-position: var(--gradient-position);
+    animation: gradient-animation var(--animation-duration) ease 2s infinite;
+
+    opacity: .5 !important;
+    mix-blend-mode: overlay;
+}
+
+
+/* ============================================================================== */
+/* FEET */
+/* ============================================================================== */
+
+.threeD-model .feet {
+    position: absolute;
+    width: calc(var(--x) / 11);
+    height: calc(var(--z) / 11);
+}
+
+/* FRONT LEFT */
+.threeD-model .front-left {
+    top: 5%;
+    left: 2.5%;
+}
+
+/* BACK LEFT */
+.threeD-model .back-left {
+    bottom: 5%;
+    left: 2.5%;
+}
+
+/* FRONT RIGHT */
+.threeD-model .front-right {
+    top: 5%;
+    right: 2.5%;
+}
+
+/* BACK RIGHT */
+.threeD-model .back-right {
+    bottom: 5%;
+    right: 2.5%;
+}
+
+
+
+.threeD-model .feet > div {
+    background-color: #1e1e1e !important;
+}
+
+/* front */
+.threeD-model .feet div:nth-of-type(1) {
+    width: calc(var(--x) / 11);
+    height: calc(var(--y) / 2);
+    transform-origin: top;
+    rotate: x 90deg;
+    translate: 0 calc(var(--z) / 11) calc(var(--y) * -.5);
+}
+
+/* back */
+.threeD-model .feet div:nth-of-type(2) {
+    width: calc(var(--x) / 11);
+    height: calc(var(--y) / 2);
+    transform-origin: top;
+    rotate: x 90deg;
+    translate: 0 0 calc(var(--y) * -.5);
+}
+
+/* top */
+.threeD-model .feet div:nth-of-type(3) {
+    /* empty */
+}
+
+/* bottom */
+.threeD-model .feet div:nth-of-type(4) {
+    width: calc(var(--x) / 11);
+    height: calc(var(--z) / 11);
+    translate: 0 0 calc(var(--y) * -.5);
+}
+
+/* left */
+.threeD-model .feet div:nth-of-type(5) {
+    width: calc(var(--y) / 2);
+    height: calc(var(--z) / 11);
+    transform-origin: left;
+    rotate: y 90deg;
+    translate: 0 0 0;
+}
+
+/* right */
+.threeD-model .feet div:nth-of-type(6) {
+    width: calc(var(--y) / 2);
+    height: calc(var(--z) / 11);
+    transform-origin: left;
+    rotate: y 90deg;
+    translate: calc(var(--x) / 11) 0 0;
 }

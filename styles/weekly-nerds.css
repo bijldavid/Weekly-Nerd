@@ -101,9 +101,18 @@
 }
 
 .weekly-nerds-container section>div .week .college {
-    background-color: var(--beige-2-50);
+    background-color: var(--beige-2-5);
     border-radius: 1cqw;
     width: 100%;
+}
+
+.weekly-nerds-container section>div .week .college:hover {
+    outline: 1px var(--orange) solid;
+}
+
+.weekly-nerds-container section>div .week:has(.empty) .college:hover {
+    outline: 1px rgb(169, 169, 169) solid;
+    cursor: not-allowed;
 }
 
 .weekly-nerds-container section>div .week aside {
@@ -133,6 +142,11 @@
     color: white;
     padding: .75cqw 1.5cqw;
     border-radius: .75cqw;
+    transition: background-color .3s ease;
+}
+
+.weekly-nerds-container section>div .week:has(.college details[open]):not(:has(.empty)) aside p {
+    background-color: var(--orange);
 }
 
 .weekly-nerds-container section>div .week aside p::before {
