@@ -13,7 +13,7 @@
 }
 
 .hero-inner {
-    height: 80dvh;
+    height: 90vh;
     display: grid;
     place-items: center;
 }
@@ -288,12 +288,12 @@
 
 .projects-container section>div>.code img {
     height: .66rem;
-    width: max-content;
+    width: auto;
 }
 
 .projects-container section>div>.design img {
     height: .88rem;
-    width: max-content;
+    width: auto;
 }
 
 /* projects */
