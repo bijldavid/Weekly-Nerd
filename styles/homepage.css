@@ -13,7 +13,7 @@
 }
 
 .hero-inner {
-    height: 90vh;
+    height: 800px;
     display: grid;
     place-items: center;
 }
