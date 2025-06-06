@@ -3,9 +3,9 @@
 /* ============================================================================== */
 
 .threeD {
-    --x: 15em;
-    --y: .5em;
-    --z: 10em;
+    --x: 22.5cqw;
+    --y: .75cqw;
+    --z: 15cqw;
 
     --animation-duration: 10s;
 
@@ -32,22 +32,14 @@
 
 .threeD-model {
     animation: spin var(--animation-duration) linear infinite;
-    translate: 0 5em;
-    /* transform: rotateY(-140deg) rotateX(-20deg); */
+    translate: 0 6.5vw;
+    /* transform: rotateY(0deg) rotateX(-20deg); */
 }
 
 @keyframes spin {
     0% {
         transform: rotateY(0deg) rotateX(-20deg);
     }
-
-    /* 45% {
-        transform: rotateY(90deg) rotateX(-10deg);
-    }
-
-    55% {
-        transform: rotateY(270deg) rotateX(-10deg);
-    } */
 
     100% {
         transform: rotateY(360deg) rotateX(-20deg);
@@ -180,7 +172,7 @@
     /* rotate: x 110deg; */
 }
 
-.about-me:hover .threeD-model .top {
+.about-me .threeD-model .top {
     rotate: x 110deg;
     translate: 0 calc(var(--y) / -2) -3px;
 }
@@ -247,8 +239,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 3px;
-    padding: .75rem .75rem 3px .75rem
 }
 
 .threeD-model .keyboard-container .keyboard {
@@ -257,9 +247,6 @@
     display: flex;
     flex-direction: column;
     background-color: #1e1e1e;
-    gap: 3px;
-    padding: 4px;
-    border-radius: 3px;
     user-select: none;
 }
 
@@ -271,8 +258,6 @@
 }
 
 .keyboard .row span {
-    font-size: 3px;
-    padding: 1.9% 2.1%;
     background-color: rgb(20, 20, 20);
     color: white;
     transition: translate 1s;

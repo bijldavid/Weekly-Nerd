@@ -42,6 +42,7 @@
 
 body {
     background-color: var(--orange);
+    overflow-x: clip;
 }
 
 a {

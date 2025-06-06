@@ -227,3 +227,11 @@
     font-size: 1.3cqw;
 }
 
+
+
+@media (max-width: 1300px) {
+    aside {
+        display: none;
+    }
+}
+

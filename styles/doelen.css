@@ -1,0 +1,157 @@
+/* ============================================================================== */
+/* DOELEN */
+/* ============================================================================== */
+
+.doelen {
+    position: relative;
+    background-color: var(--beige-2);
+    padding: 0 3vw var(--padding) 3vw;
+}
+
+.doelen-container-wrapper {
+    container-type: inline-size;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.doelen-container {
+    position: relative;
+    padding: 1.33cqw;
+    container-type: inline-size;
+}
+
+/* decorative lines */
+.doelen-container::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: calc(100% + var(--padding));
+    background-color: var(--beige-4);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.doelen-container svg {
+    position: absolute;
+    stroke: var(--beige-4);
+    stroke-dasharray: 8 14;
+    height: calc(100% + var(--padding));
+    width: .15cqw;
+    top: 0;
+}
+
+.doelen-container svg:nth-of-type(1) {
+    left: 6.34cqw;
+}
+
+.doelen-container svg:nth-of-type(2) {
+    right: 6.34cqw;
+}
+
+
+.doelen-container section {
+    padding: 10cqw 9cqw 6cqw 9cqw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.doelen-container section h1 {
+    position: relative;
+    white-space: nowrap;
+    font-size: 4.5cqw;
+    line-height: 4.5cqw;
+    font-weight: var(--heavy);
+    font-family: "articulat-cf", sans-serif;
+    font-style: normal;
+    color: var(--font-black);
+}
+
+.doelen-container section h1::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 1cqw;
+    background-color: var(--orange);
+    left: -4.525cqw;
+    top: 0;
+}
+
+.doelen-container section h1::after {
+    position: absolute;
+    content: '';
+    bottom: -2.5cqw;
+    left: calc(-1 * (100vw - 100%) / 2);
+    width: 100vw;
+    height: 1px;
+    background-color: var(--beige-4);
+}
+
+.doelen-container section>div {
+    margin-top: 7.5cqw;
+    display: flex;
+    flex-direction: column;
+    gap: 3cqw;
+}
+
+.doelen-container section>div .doel {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    background-color: var(--beige-2-5);
+    border-radius: 1cqw;
+    width: 100%;
+    padding: 3cqw 4cqw;
+    z-index: 2;
+    gap: 1cqw 0;
+}
+
+.doelen-container section>div .doel .doel-label {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    margin-inline-end: 2cqw;
+    margin-block-start: .25cqw;
+}
+
+.doelen-container section>div .doel .doel-label p {
+    font-family: rm-mono;
+    font-size: 1.33cqw;
+    width: max-content;
+    background-color: var(--beige-4);
+    color: white;
+    padding: .75cqw 1.5cqw;
+    border-radius: .75cqw;
+    transition: background-color .3s ease;
+    text-transform: uppercase;
+}
+
+.doelen-container section>div .doel .doel-titel h2 {
+    font-size: 2.5cqw;
+    font-weight: var(--extra-bold);
+    font-family: "articulat-cf", sans-serif;
+    font-style: normal;
+    color: var(--font-black);
+}
+
+.doelen-container section>div .doel .doel-toelichting h3,
+.doelen-container section>div .doel .doel-check h3 {
+    font-size: 1.5cqw;
+    font-family: "articulat-cf", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--font-black);
+    margin-block-end: .25cqw;
+}
+
+.doelen-container section>div .doel .doel-toelichting p,
+.doelen-container section>div .doel .doel-check p {
+    font-size: 1.5cqw;
+    font-family: "articulat-cf", sans-serif;
+    font-style: normal;
+    color: var(--font-black);
+}
+
+.doelen-container section>div .doel .doel-titel,
+.doelen-container section>div .doel .doel-toelichting,
+.doelen-container section>div .doel .doel-check {
+    border-left: 1px solid var(--beige-4);
+    padding-inline-start: 2cqw;
+}
