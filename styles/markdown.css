@@ -5,17 +5,18 @@
 }
 
 .notes .section-title {
-    font-size: 1.5cqw;
-    margin: 2.5cqw 0 .33cqw 0;
+    font-size: 1rem;
+    margin: 1rem 0 .25rem 0;
     font-weight: 700;
 }
 
-.notes p, .notes li {
-    font-size: 1.5cqw;
+.notes p,
+.notes li {
+    font-size: 1rem;
 }
 
 .notes small {
-    font-size: 1.2cqw;
+    font-size: .75rem;
 }
 
 .notes-list {
@@ -29,7 +30,7 @@
 }
 
 .code-example {
-    font-size: 1.25cqw;
+    font-size: .88rem;
     background-color: #28292a;
     color: white;
     padding: 0.75em;
@@ -40,7 +41,7 @@
 }
 
 code {
-    font-size: 1.25cqw;
+    font-size: .88rem;
     font-family: rm-mono;
     padding: 0.25em;
     border-radius: 3px;
@@ -59,4 +60,73 @@ code {
 .empty {
     color: var(--beige-4) !important;
     text-decoration: line-through;
+}
+
+
+@media (min-width: 850px) {
+
+    .notes {
+        font-family: "articulat-cf", sans-serif;
+        font-style: normal;
+        color: var(--font-black);
+    }
+
+    .notes .section-title {
+        font-size: 1.5cqw;
+        margin: 2.5cqw 0 .33cqw 0;
+        font-weight: 700;
+    }
+
+    .notes p,
+    .notes li {
+        font-size: 1.5cqw;
+    }
+
+    .notes small {
+        font-size: 1.2cqw;
+    }
+
+    .notes-list {
+        padding-left: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .notes .highlight {
+        color: var(--orange);
+        font-weight: bold;
+    }
+
+    .code-example {
+        font-size: 1.25cqw;
+        background-color: #28292a;
+        color: white;
+        padding: 0.75em;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-family: rm-mono;
+        margin: 0.5em 0;
+    }
+
+    code {
+        font-size: 1.25cqw;
+        font-family: rm-mono;
+        padding: 0.25em;
+        border-radius: 3px;
+        background-color: var(--beige-5);
+        color: white;
+    }
+
+    .quote {
+        margin: 1em 0;
+        padding: 5px 5px 5px 1em;
+        border-left: 4px solid var(--orange);
+        font-style: italic;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .empty {
+        color: var(--beige-4) !important;
+        text-decoration: line-through;
+    }
+
 }

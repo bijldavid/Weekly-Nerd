@@ -10,7 +10,7 @@
 
 .weekly-nerds-container-wrapper {
     container-type: inline-size;
-    max-width: 1100px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -37,7 +37,7 @@
     stroke: var(--beige-4);
     stroke-dasharray: 8 14;
     height: calc(100% + var(--padding));
-    width: .15cqw;
+    width: 1px;
     top: 0;
 }
 
@@ -57,10 +57,9 @@
 
 .weekly-nerds-container section h1 {
     position: relative;
-    white-space: nowrap;
-    font-size: 4.5cqw;
-    line-height: 4.5cqw;
+    font-size: 2rem;
     font-weight: var(--heavy);
+    line-height: var(--heading-line-height);
     font-family: "articulat-cf", sans-serif;
     font-style: normal;
     color: var(--font-black);
@@ -190,13 +189,13 @@
     content: '';
     position: absolute;
     background-image: url(../images/arrow-orange.svg);
-    background-size: 1cqw;
+    background-size: .5rem;
     background-position: center;
     background-repeat: no-repeat;
     top: 50%;
     right: 4cqw;
     translate: 0 -50%;
-    height: 2cqw;
+    height: 1rem;
     aspect-ratio: 1;
     transform: rotate(0deg);
     transition: transform .3s ease;
@@ -213,7 +212,7 @@
 }
 
 .weekly-nerds-container section>div .week .college details summary>h2 {
-    font-size: 2.5cqw;
+    font-size: 1.3rem;
     font-weight: var(--extra-bold);
     font-family: "articulat-cf", sans-serif;
     font-style: normal;
@@ -224,7 +223,7 @@
     font-family: rm-mono;
     color: var(--beige-5);
     text-transform: uppercase;
-    font-size: 1.3cqw;
+    font-size: .65rem;
 }
 
 
@@ -235,3 +234,62 @@
     }
 }
 
+@media (min-width: 850px) {
+
+    .weekly-nerds-container-wrapper {
+        container-type: inline-size;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .doelen-container svg {
+        position: absolute;
+        stroke: var(--beige-4);
+        stroke-dasharray: 8 14;
+        height: calc(100% + var(--padding));
+        width: .15cqw;
+        top: 0;
+    }
+
+    .weekly-nerds-container section h1 {
+        position: relative;
+        white-space: nowrap;
+        font-size: 4.5cqw;
+        line-height: 4.5cqw;
+        font-weight: var(--heavy);
+        font-family: "articulat-cf", sans-serif;
+        font-style: normal;
+        color: var(--font-black);
+    }
+
+    .weekly-nerds-container section>div .week .college details summary>h2 {
+        font-size: 2.5cqw;
+        font-weight: var(--extra-bold);
+        font-family: "articulat-cf", sans-serif;
+        font-style: normal;
+        color: var(--font-black);
+    }
+    
+    .weekly-nerds-container section>div .week .college details summary>small {
+        font-family: rm-mono;
+        color: var(--beige-5);
+        text-transform: uppercase;
+        font-size: 1.3cqw;
+    }
+
+    .weekly-nerds-container section>div .week .college:not(:has(.empty)) details summary::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/arrow-orange.svg);
+        background-size: 1cqw;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 50%;
+        right: 4cqw;
+        translate: 0 -50%;
+        height: 2cqw;
+        aspect-ratio: 1;
+        transform: rotate(0deg);
+        transition: transform .3s ease;
+    }
+}
