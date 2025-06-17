@@ -7,6 +7,76 @@
     background-color: var(--beige-3);
 }
 
+.projects-container section ul li a {
+    display: flex;
+    height: 100%;
+}
+
+.projects-container section ul li a div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.projects-container section ul li a div p {
+    font-family: rm-mono;
+    text-transform: uppercase;
+    font-size: var(--label-font-size);
+    color: white;
+    font-size: 1rem;
+    margin-inline: 1rem;
+    text-align: center;
+}
+
+.projects-container section ul li a div p:nth-of-type(2) {
+    font-size: .75rem;
+}
+
+.projects-container section ul li:nth-of-type(2n + 2) a img {
+    order: -1;
+}
+
+.projects-container section ul li a img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .projects-container section ul li:hover {
     outline: 2px solid var(--orange);
+}
+
+.projects-container section div:nth-of-type(2) ul li:nth-of-type(1) a div {
+    background-color: #b99262
+}
+
+.projects-container section div:nth-of-type(2) ul li:nth-of-type(2) a div {
+    background-color: #383533
+}
+
+.projects-container section div:nth-of-type(2) ul li:nth-of-type(3) a div {
+    background-color: #1c217c;
+}
+
+.projects-container section div:nth-of-type(2) ul li:nth-of-type(4) a div {
+    background-color: #FEE959;
+}
+
+.projects-container section div:nth-of-type(2) ul li:nth-of-type(4) a div p {
+    color: black;
+}
+
+.projects-container section div:nth-of-type(3) ul li:nth-of-type(1) a div {
+    background-color: #302c3e
+}
+
+.projects-container section div:nth-of-type(3) ul li:nth-of-type(2) a div {
+    background-color: #ffc814;
+}
+
+.projects-container section div:nth-of-type(3) ul li:nth-of-type(3) a div {
+    background-color: #b62424;
 }

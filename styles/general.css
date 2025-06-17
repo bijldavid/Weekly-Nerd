@@ -47,6 +47,7 @@ body {
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 ul:not([role="list"]) {
@@ -57,6 +58,7 @@ ul:not([role="list"]) {
 img {
     display: block;
     width: 100%;
+    pointer-events: none;
 }
 
 
@@ -72,10 +74,22 @@ img {
 /* HEADER */
 /* ========================== */
 
+
 header {
-    z-index: 10;
+    interpolate-size: numeric-only;
+    --hamburger-size: 15px;
+    --span-height: 2px;
+
     position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
     width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 2em;
 }
 
 header * {
@@ -84,16 +98,153 @@ header * {
     color: var(--orange);
 }
 
-header nav {
-    display: flex;
-    margin: 2em 4em;
-    justify-content: space-between;
+header label {
+    z-index: 10;
+    position: relative;
+    height: var(--hamburger-size);
+    aspect-ratio: 1 / 1;
 }
 
-header nav div {
-    display: flex;
-    gap: 2em;
+header label input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 }
+
+header:has(label input:focus-visible) label {
+    outline: var(--orange) solid 1px;
+}
+
+header label div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "stack";
+    place-items: center;
+}
+
+header label div span {
+    grid-area: stack;
+    height: var(--span-height);
+    width: 100%;
+    background-color: var(--orange);
+    transition: all 0.15s ease;
+}
+
+header label div span:nth-of-type(1) {
+    translate: 0 calc((var(--hamburger-size) / 2) - (var(--span-height) / 2));
+}
+
+header label div span:nth-of-type(2) {
+    translate: 0 0;
+    width: 100%;
+}
+
+header label div span:nth-of-type(3) {
+    translate: 0 calc((var(--hamburger-size) / -2) - (var(--span-height) / -2));
+}
+
+header:has(input:checked) div span:nth-of-type(1) {
+    translate: 0 0;
+    rotate: z 45deg;
+    width: calc(100% * 1.1);
+}
+
+header:has(input:checked) div span:nth-of-type(2) {
+    translate: 0 0;
+    opacity: 0;
+    width: 0px;
+}
+
+header:has(input:checked) div span:nth-of-type(3) {
+    translate: 0 0;
+    rotate: z -45deg;
+    width: calc(100% * 1.1);
+}
+
+/* closed state */
+header nav {
+    display: none;
+    width: 0px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--beige-3);
+
+    transition: display 0.5s allow-discrete, width 0.5s;
+}
+
+/* open state */
+header:has(input:checked) nav {
+    display: block;
+    width: 100%;
+    background-color: var(--beige-3);
+
+
+    @starting-style {
+        width: 0px;
+        background-color: var(--beige-3);
+
+    }
+}
+
+header nav ul {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 80vh;
+    text-align: right;
+}
+
+header nav ul a {
+    white-space: nowrap;
+}
+
+header nav ul li a:focus-visible {
+    outline: var(--orange) solid 1px;
+}
+
+@media (min-width: 850px) {
+
+    header label {
+        display: none;
+    }
+
+    header nav {
+        position: static;
+        display: block;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        padding: 0;
+
+        margin-top: 0;
+        text-align: left;
+    }
+
+    header nav ul a {
+        white-space: nowrap;
+    }
+}
+
+
+
+
+
+
+
+
 
 main {
     position: relative;
@@ -102,12 +253,12 @@ main {
 
 details summary {
     list-style: none;
-  }
-  
-  details summary::marker {
+}
+
+details summary::marker {
     display: none;
-  }
-  
-  details summary::-webkit-details-marker {
+}
+
+details summary::-webkit-details-marker {
     display: none;
-  }
+}

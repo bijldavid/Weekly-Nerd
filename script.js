@@ -97,3 +97,18 @@ window.addEventListener('scroll', function () {
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // ABOUT ME
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+let aboutSection = document.querySelector('.about-me');
+let threeDTop = document.querySelector('.threeD-model .top');
+
+window.addEventListener('scroll', () => {
+    const aboutPosition = aboutSection.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (aboutPosition < windowHeight * 0.6) {
+        threeDTop.classList.add('open-laptop');
+        console.log('please!!!!!!!')
+    } else {
+        threeDTop.classList.remove('open-laptop');
+    }
+});

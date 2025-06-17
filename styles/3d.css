@@ -90,17 +90,18 @@
     opacity: .3;
     transition: opacity .6s linear;
 }
+/* 
 
 /* hover lighting fix */
-.about-me:hover .threeD-model .top>div:nth-of-type(1)::before {
+.about-me .threeD-model .top.open-laptop>div:nth-of-type(1)::before {
     opacity: 0;
 }
 
-.about-me:hover .threeD-model .top>div:nth-of-type(4)::before {
+.about-me .threeD-model .top.open-laptop>div:nth-of-type(4)::before {
     opacity: .15;
 }
 
-.about-me:hover .threeD-model .top>div:nth-of-type(3)::before {
+.about-me .threeD-model .top.open-laptop>div:nth-of-type(3)::before {
     opacity: .4;
 }
 
@@ -169,10 +170,15 @@
     transform-origin: top;
     transition: all 1s ease;
     translate: 0 0 calc(var(--y) / 2);
-    /* rotate: x 110deg; */
+    rotate: x 110deg;
 }
 
 .about-me .threeD-model .top {
+    rotate: x 0deg;
+    translate: 0 0 0; 
+}
+
+.about-me .threeD-model .top.open-laptop {
     rotate: x 110deg;
     translate: 0 calc(var(--y) / -2) -3px;
 }
