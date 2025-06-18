@@ -1,6 +1,25 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// HEADER
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+let headerCheckbox = document.querySelector('header #hamburger');
+
+function updateCheckboxState() {
+    if (headerCheckbox) {
+        if (window.innerWidth < 850) {
+            headerCheckbox.checked = false;
+        }
+    }
+}
+
+window.addEventListener('resize', updateCheckboxState);
+window.addEventListener('DOMContentLoaded', updateCheckboxState);
+
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // HERO
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
 let heroSection = document.querySelector('.hero-inner');
 let myWorkSection = document.querySelector('.my-work');
 

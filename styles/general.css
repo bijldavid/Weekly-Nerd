@@ -70,6 +70,11 @@ img {
     display: none;
 }
 
+::selection {
+    background-color: var(--orange);
+    color: white;
+}
+
 /* ========================== */
 /* HEADER */
 /* ========================== */
@@ -189,6 +194,11 @@ header:has(input:checked) nav {
         background-color: var(--beige-3);
 
     }
+}
+
+/* scroll-lock */
+body:has(header input:checked) {
+    overflow: hidden;
 }
 
 header nav ul {

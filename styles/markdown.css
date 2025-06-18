@@ -4,6 +4,12 @@
     color: var(--font-black);
 }
 
+.notes .subsection-title {
+    font-size: 1rem;
+    margin: .75rem 0 .125rem 0;
+    font-weight: 500;
+}
+
 .notes .section-title {
     font-size: 1rem;
     margin: 1rem 0 .25rem 0;
@@ -69,6 +75,12 @@ code {
         font-family: "articulat-cf", sans-serif;
         font-style: normal;
         color: var(--font-black);
+    }
+
+    .notes .subsection-title {
+        font-size: 1.5cqw;
+        margin: 1.5cqw 0 .15cqw 0;
+        font-weight: 500;
     }
 
     .notes .section-title {

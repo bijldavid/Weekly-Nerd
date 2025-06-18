@@ -34,6 +34,9 @@
                 <li>
                     <a href="doelen.html">Goals</a>
                 </li>
+                <li>
+                    <a href="reflectie.html">Reflection</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -863,6 +866,373 @@ left: anchor(--btn left);
 
                                         </div>
 
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 12</p>
+                                        <date>28 t/m 02 MAY</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2 class="empty">Title</h2>
+                                            <small>❌ Geen spreker</small>
+                                        </summary>
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 13</p>
+                                        <date>05 t/m 09 MAY</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2 class="empty">Title</h2>
+                                            <small>❌ Geen spreker</small>
+                                        </summary>
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 14</p>
+                                        <date>12 t/m 16 MAY</date>
+                                    </div>
+                                </aside>
+
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>AI Powered Voice Interfaces</h2>
+                                            <small>Dave Bitter</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Wat zijn AI voices?</strong></p>
+                                            <p>Dave Bitter (iO) liet zien hoe je spraakherkenning + AI combineert voor
+                                                webinterfaces</p>
+                                            <p>→ Project: “Presiparrot”, live transcriberen en terugpraten</p>
+                                            <p>→ Spraak is natuurlijker dan typen</p>
+                                            <p>→ Gewoon bouwen, niet alleen praten over ideeën</p>
+
+                                            <p class="section-title">Voice recognition</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>1950s: begin</li>
+                                                <li>2000s: Google</li>
+                                                <li>2010: Siri, Alexa</li>
+                                                <li>Nu: ChatGPT, Teams transcriptie</li>
+                                            </ul>
+
+                                            <p class="section-title">Web APIs</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Speech Recognition → luisteren</li>
+                                                <li>Speech Synthesis → terugpraten</li>
+                                                <li>Check op <code>onresult</code>, <code>onend</code></li>
+                                                <li>Stemmen klinken soms nog nep</li>
+                                            </ul>
+
+                                            <p class="section-title">Combineren + performance</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Gebruik ChatGPT voor slimme reacties</li>
+                                                <li>Split audio voor snellere feedback</li>
+                                                <li>Voeg animaties toe (bijv. luisteren, antwoorden)
+                                                    → Prestaties belangrijker dan features</li>
+                                            </ul>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Twitter Follow Bot</h2>
+                                            <small>Steve Jonk</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Twitter bot</strong></p>
+                                            <p>Steve bouwde een (illegale) Twitter-follow-bot voor een OnlyFans-klant
+                                            </p>
+                                            <p>→ Idee: automatisch mensen volgen op basis van gedrag</p>
+                                            <p>→ Bypass via scraping i.p.v. dure Twitter API</p>
+                                            <p>→ Belangrijk: bot moet menselijk lijken</p>
+
+                                            <p class="section-title">Gebruikte tools</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Puppeteer (scraping)</li>
+                                                <li>n8n (automatisering)</li>
+                                                <li>Postgres (database)</li>
+                                                <li>Docker + Ubuntu</li>
+                                            </ul>
+
+                                            <p class="section-title">Hoe werkte het?</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Puppeteer navigeert als echte gebruiker</li>
+                                                <li>Random pauzes en acties → lijkt menselijk</li>
+                                                <li>Data opgeslagen in database</li>
+                                                <li>Dashboard om alles te volgen</li>
+                                            </ul>
+
+                                            <p class="section-title">Discussie</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Ethiek vs. techniek</li>
+                                                <li>Scraping = nuttig, maar ook privacygevoelig</li>
+                                                <li>Geen duidelijk antwoord, wel veel discussie</li>
+                                            </ul>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Automate User Testing</h2>
+                                            <small>Clarke Verdel</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Testen als een echte gebruiker</strong></p>
+                                            <p>Clarke (Miele X) gaf uitleg over gestructureerd testen van front-end code
+                                            </p>
+                                            <p>→ Doel: vertrouwen in je code, op alle apparaten en browsers</p>
+                                            <p>→ Werkt volgens de “Testing Trophy” aanpak</p>
+
+                                            <p class="section-title">Testing Trophy model</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Static tooling (ESLint, TypeScript)</li>
+                                                <li>Component / unit tests</li>
+                                                <li>Integration tests</li>
+                                                <li>End-to-end tests</li>
+                                            </ul>
+
+                                            <p class="section-title">Waarom testen?</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Voorkom fouten pas laat ontdekken</li>
+                                                <li>Elke component moet altijd blijven werken</li>
+                                                <li>Test ook samenwerking tussen onderdelen</li>
+                                            </ul>
+
+                                            <p class="section-title">Wat test je?</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Responsiveness</li>
+                                                <li>Accessibility (A11y)</li>
+                                                <li>Performance</li>
+                                                <li>Browsercompatibiliteit</li>
+                                                <li>Dark / light mode</li>
+                                                <li>Animaties</li>
+                                                <li>SEO</li>
+                                                <li>Multi-tenancy</li>
+                                            </ul>
+
+                                            <p class="section-title">Tools en werkwijze</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Vitest voor componenttests</li>
+                                                <li>Cypress / Playwright voor E2E</li>
+                                                <li>Tests draaien in Node met synthetic DOM</li>
+                                                <li>Test componentdata in echte browsers</li>
+                                            </ul>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 15</p>
+                                        <date>19 t/m 23 MAY</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Q42</h2>
+                                            <small>Johan Huijkman & Marvin Sernee</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Wie zijn Q42?</strong></p>
+                                            <p>Q42 = “nerdagency” die werkt aan inclusieve digitale producten</p>
+                                            <p>→ Bekend van o.a. Rijksmuseum-site, HEMA, Philips Hue</p>
+                                            <p>→ Werken agile, in co-creatie, vaak met Fabrique (Eidra)</p>
+                                            <p>→ Focus op toegankelijkheid, creativiteit en experiment (zoals W00tcamp)
+                                            </p>
+
+                                            <p class="section-title">Toegankelijkheid en nieuwe wetgeving</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Voorbereiden op WCAG 2.1 / EU regels</li>
+                                                <li>Toegankelijkheid = standaard, niet extra</li>
+                                                <li>Testen met echte mensen, niet alleen tools</li>
+                                            </ul>
+
+                                            <p class="section-title">Project: SenseMath</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Wiskunde toegankelijk maken via geluid</li>
+                                                <li>i.p.v. visuele grafiek → buigende tonen</li>
+                                                <li>App gemaakt met Visio voor blinde leerlingen</li>
+                                                <li>Veel iteraties en testen met echte gebruikers</li>
+                                            </ul>
+
+                                            <p class="section-title">Project: Oculi Mundi</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>3D online kunstcollectie van Sunderland</li>
+                                                <li>Gemaakt met HTML + CSS (geen WebGL)</li>
+                                                <li>Micl.io voor hoge resolutie beelden</li>
+                                                <li>Toegankelijk: tabnavigatie, reduced motion, enz.</li>
+                                            </ul>
+
+                                            <p class="section-title">Q42 cultuur</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Veel ruimte voor experimenten (zoals W00tcamp)</li>
+                                                <li>Creatieve en technische vrijheid in projecten</li>
+                                                <li>Altijd gericht op de eindgebruiker</li>
+                                            </ul>
+
+                                        </div>
+
+
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 16</p>
+                                        <date>26 t/m 30 MAY</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Digitale toegankelijkheid in de praktijk</h2>
+                                            <small>Marieke de Hoop</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Hoe ziet dat er uit?</strong></p>
+                                            <p>Marieke (oud CMD'er) werkt als toegankelijkheidsexpert bij een
+                                                consultancy</p>
+                                            <p>→ Werkt o.a. voor gemeentes, ASR, enz.</p>
+                                            <p>→ Doet audits, geeft advies, en geeft trainingen</p>
+
+                                            <p class="section-title">Waarom is toegankelijkheid belangrijk?</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>32% van de Nederlanders heeft een beperking</li>
+                                                <li>Niet alleen permanent → ook tijdelijk of situationeel</li>
+                                                <li>Toegankelijkheid = voor iedereen</li>
+                                            </ul>
+
+                                            <p class="section-title">Nieuwe wet: European Accessibility Act (EAA)</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Gaat in op 28 juni 2025</li>
+                                                <li>Geldt voor o.a. webshops, banken en telecom</li>
+                                                <li>Boetes tot €20 miljoen of 10% van je omzet</li>
+                                                <li>Disproportionele last mag, maar moet aantoonbaar zijn</li>
+                                                <li>Toegankelijkheid wordt een wettelijke verplichting</li>
+                                            </ul>
+
+                                            <p class="section-title">Hoe wordt er getest?</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Gebruik van tools zoals Stylus, Stark, Colour Contrast Checker</li>
+                                                <li>Op basis van WCAG-richtlijnen</li>
+                                                <li>Testen, advies geven, en kennis delen via cursussen</li>
+                                            </ul>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 17</p>
+                                        <date>02 t/m 06 JUN</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2>Cascades cascading</h2>
+                                            <small>Miriam Susanne</small>
+                                        </summary>
+
+                                        <div class="notes">
+
+                                            <p><strong>Over het web en cascading</strong></p>
+                                            <p>Miriam (VS) gaf een filosofische talk over de oorsprong van het web</p>
+                                            <p>→ Web = oorspronkelijk bedoeld voor tekst en publiek onderzoek</p>
+                                            <p>→ Nu: visueel, interactief, commercieel</p>
+                                            <p>→ Vraag: voor wie en waarvoor is het web eigenlijk gemaakt?</p>
+
+                                            <p class="section-title">Missie van het web</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>W3C motto: “Web for all, web on everything”</li>
+                                                <li>Vroeger bepaalde de browser hoe iets eruitzag</li>
+                                                <li>Ontwerpers hadden weinig controle</li>
+                                                <li>Nu wordt styling vaak geforceerd → minder flexibel voor gebruikers
+                                                </li>
+                                            </ul>
+
+                                            <p class="section-title">Belangrijkste boodschap</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Ontwerp niet voor 'de gemiddelde gebruiker'</li>
+                                                <li>Respecteer voorkeuren van gebruikers en apparaten</li>
+                                                <li>Web design = nooit “af” → altijd in handen van de gebruiker</li>
+                                            </ul>
+
+                                            <p class="section-title">Reflectie</p>
+                                            <ul role="list" class="notes-list">
+                                                <li>Talk was interessant maar moeilijk te volgen</li>
+                                                <li>Wist niet goed wat “cascading” betekent</li>
+                                                <li>Wel goed om na te denken over het doel van het web</li>
+                                            </ul>
+
+                                        </div>
+
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <aside>
+                                    <div>
+                                        <p>WEEK 18</p>
+                                        <date>09 t/m 13 JUN</date>
+                                    </div>
+                                </aside>
+                                <div class="college">
+                                    <details>
+                                        <summary>
+                                            <h2 class="empty">Title</h2>
+                                            <small>❌ Geen spreker</small>
+                                        </summary>
                                     </details>
                                 </div>
                             </div>
