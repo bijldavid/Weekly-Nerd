@@ -6,7 +6,7 @@ let headerCheckbox = document.querySelector('header #hamburger');
 
 function updateCheckboxState() {
     if (headerCheckbox) {
-        if (window.innerWidth < 850) {
+        if (window.innerWidth >= 850) {
             headerCheckbox.checked = false;
         }
     }
